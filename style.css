@@ -6,7 +6,7 @@ body {
     min-height: 100vh;
 
     display: grid;
-    grid-template-columns: 270px, 1fr;
+    grid-template-columns: 270px 1fr;
     grid-template-rows: 1fr auto;
     grid-template-areas:
                 "sidebar grade"
@@ -105,5 +105,27 @@ body {
 }
 
 .primeira{
-    order
+    order:-1;
+    background: #ffd6e0;
+    color: #b0476a;
+}
+
+.toda{
+    grid-column: 1 / -1;
+    background:#a35a2a;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    margin: 0 30px 20px;
+    background-color: #e8e0f7;
+    color: #6b5b95;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.footer p{
+    margin: 0;
 }
